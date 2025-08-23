@@ -133,7 +133,7 @@ The CNN model was built using Keras and had the following structure:
 - One additional convolutional layer with 64 filters
 - Fully connected layers:
   - A dense layer with 128 units
-  - A softmax output layer with 31 classes (likely representing alphanumeric characters)
+  - A softmax output layer with 31 classes (representing alphanumeric characters)
 
 ###### Dataset and Preprocessing
 
