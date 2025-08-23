@@ -4,48 +4,39 @@ This project focuses on detecting license plates from vehicle images and extract
 
 ## Project Structure
 
-| Folder                         | Description                                                                 |
-|--------------------------------|-----------------------------------------------------------------------------|
-| API/                           | FastAPI backend for serving plate detection and recognition models.        |
-| Data/                          | Contains raw data and training data for the CNN model.                     |
-| Dummy_Data_For_Small_Test/     | A small dataset used for quick testing and debugging.                      |
-| Excess_File/                   | Miscellaneous or temporary files not used in the final pipeline.           |
-| Extract_Letter_From_Plate/     | Core package containing all essential functions for detection and OCR.     |
-| gradio_path/                   | Gradio-based frontend interface for user interaction.                      |
-| Model_training/                | Stores model training scripts, weights, and configuration files.           |
-| Test_models/                   | Scripts and data to benchmark model accuracy on 100 test images.           |
+| Folder                     | Description                                                           |
+|----------------------------|-----------------------------------------------------------------------|
+| frontend/                  | Gradio-based frontend interface for user interaction.                 |
+| backend/                   | FastAPI backend for serving plate detection and recognition models.   |
+| experiment/functions/      | Functions and pipeline needed for the applications.                   |
+| experiment/model_training/ | Stores model training scripts, weights, and configuration files.      |
+| experiment/test_folder/    | Contains data to benchmark model accuracy on some test images.        |
 
 ## How to run the project
 
 ### For deployment
 
-1. Enter the `Extract_Letter_From_Plate/Functions/__init__.py` path and comment this part:
-- 'from .read_plate import PlateOCRProcessor'
--  'PlateOCRProcessor' under `__all__`
+1. Install Anaconda or miniconda
 
-2. Change model directory:
-- Change the model directory in `API/main.py` to your local directory.
-
-3. Create a new virtual environment and install necessary packages
-- Download Anaconda Navigator
-- Open Anaconda Prompt (prefer as Administrator)
+2. Create a new virtual environment and install necessary packages
+- Open Anaconda Prompt (prefer as Administrator).
 - Create a new environment using this line: `conda create -n deploymentENV python=3.10`
 - Activate your environment: `conda activate deploymentENV`
 - Change directory to your own local path for the Plate_Detection, for example mine is `C:\Users\ACER\Documents\nhatminh743\Plate_Detection` using this line:
 `cd <your-path>`
 - Install the requirements package using: `pip install -r requirements.txt`
 
-4. Run backend
-- Open new Anaconda Prompt
+3. Run backend
+- Open new Anaconda Prompt (prefer as Administrator).
 - Activate environment: `conda activate deploymentENV`
 - Change directory to folder: E.g. `cd C:\Users\ACER\Documents\Plate_Detection`
 - Run backend: `uvicorn backend.main:app --reload --port 8000`
 - Check if backend run: http://127.0.0.1:8000/docs
 
-5. Run frontend
+4. Run frontend
 - Open new Anaconda Prompt
 - Activate environment: `conda activate deploymentENV`
-- Change directory to gradio_path folder: E.g. `cd C:\Users\ACER\Documents\Plate_Detection\frontend`
+- Change directory to frontend folder: E.g. `cd C:\Users\ACER\Documents\Plate_Detection\frontend`
 - Run frontend: `gradio gradio_app.py`
 - Check if frontend run: http://127.0.0.1:7860/
 
