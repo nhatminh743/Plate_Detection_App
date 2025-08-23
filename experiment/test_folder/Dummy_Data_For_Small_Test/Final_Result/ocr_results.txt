@@ -1,0 +1,1 @@
+/home/minhpn/Desktop/Green_Parking/Dummy_Data_For_Small_Test/Extracted_Plate_Data/0228_01392_b_plate.jpg H 17 0.6592159271240234 0.2874043881893158 0.15728148818016052 0.422285795211792

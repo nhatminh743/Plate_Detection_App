@@ -1,0 +1,35 @@
+
+python3 run.py \
+-c 3000 \
+-w 1 \
+--output_dir=/home/minhpn/Desktop/Green_Parking/Model_training/Text_Recognition_Data_Gen/plate_image_gen/full_plate/gaussian_blur \
+-l vn \
+-t 10 \
+-b 0 \
+-k 55 -rk \
+-f 60
+
+
+Full plate: (Total 13000)
+
+3000 for gaussian blur
+
+3000 for white
+
+4000 for quasicrystal
+
+20000 for images
+
+
+First part & Second part: (Total 26000)
+
+8000 for gaussian blur
+
+8000 for white
+
+15000 for quasicrystal
+
+30000 for images
+
+
+
