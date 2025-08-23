@@ -231,8 +231,6 @@ This approach allowed PaddleOCR to better generalize to real-world variations in
 
 #### Conclusion
 
-Conclusion
-
 While CNN segmentation with EasyOCR provided a simple OCR pipeline, it lacked reliability and scalability for real-world conditions. It suffered from low accuracy, unstable character ordering, and heavy dependence on postprocessing.
 
 YOLOv11 detection improved robustness and accuracy, handling noise and distortions more effectively with minimal manual intervention. However, its performance was limited when dealing with variations in plate angles and real-world diversity.
