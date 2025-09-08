@@ -12,6 +12,10 @@ This project focuses on detecting license plates from vehicle images and extract
 | experiment/model_training/ | Stores model training scripts, weights, and configuration files.      |
 | experiment/test_folder/    | Contains data to benchmark model accuracy on some test images.        |
 
+**Note**: This repository is the complete version. Please check this version for the messy development version:
+
+https://github.com/nhatminh743/Plate_Detection
+
 ## How to run the project
 
 ### For deployment
